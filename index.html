@@ -12,32 +12,42 @@
     }
     h1 {
       color: #2c3e50;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 0 auto;
+    .gift-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
-    li {
-      background: #ffffff;
-      margin: 10px 0;
+    .gift-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 220px;
       padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    a {
+    .gift-item:hover {
+      transform: scale(1.05);
+    }
+    .gift-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .gift-item a {
+      display: block;
+      margin-top: 10px;
       text-decoration: none;
       color: #2980b9;
-      font-size: 18px;
       font-weight: bold;
+      font-size: 16px;
     }
-    a:hover {
+    .gift-item a:hover {
       color: #e74c3c;
     }
     p {
-      margin-top: 30px;
+      margin-top: 40px;
       font-style: italic;
       color: #555;
     }
@@ -45,12 +55,32 @@
 </head>
 <body>
   <h1>🎁 Meus Presentes Desejados</h1>
-  <ul>
-    <li><a href="https://www.exemplo.com/presente1" target="_blank">Tênis Nike Air</a></li>
-    <li><a href="https://www.exemplo.com/presente2" target="_blank">Livro: O Senhor dos Anéis</a></li>
-    <li><a href="https://www.exemplo.com/presente3" target="_blank">Smartwatch Samsung Galaxy</a></li>
-    <li><a href="https://www.exemplo.com/presente4" target="_blank">Camisa do Flamengo</a></li>
-  </ul>
+  <div class="gift-list">
+    <div class="gift-item">
+      <a href="https://www.exemplo.com/tenis-nike" target="_blank">
+        <img src="https://via.placeholder.com/220x150?text=T%C3%AAnis+Nike+Air" alt="Tênis Nike Air">
+        Tênis Nike Air
+      </a>
+    </div>
+    <div class="gift-item">
+      <a href="https://www.exemplo.com/livro-senhor-dos-aneis" target="_blank">
+        <img src="https://via.placeholder.com/220x150?text=Livro+Senhor+dos+An%C3%A9is" alt="Livro O Senhor dos Anéis">
+        Livro: O Senhor dos Anéis
+      </a>
+    </div>
+    <div class="gift-item">
+      <a href="https://www.exemplo.com/smartwatch-samsung" target="_blank">
+        <img src="https://via.placeholder.com/220x150?text=Smartwatch+Samsung" alt="Smartwatch Samsung Galaxy">
+        Smartwatch Samsung Galaxy
+      </a>
+    </div>
+    <div class="gift-item">
+      <a href="https://www.exemplo.com/camisa-flamengo" target="_blank">
+        <img src="https://via.placeholder.com/220x150?text=Camisa+Flamengo" alt="Camisa do Flamengo">
+        Camisa do Flamengo
+      </a>
+    </div>
+  </div>
   <p>Obrigado por me ajudar a realizar meus desejos! 💙</p>
 </body>
 </html>
